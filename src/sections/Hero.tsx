@@ -1,9 +1,25 @@
 import memojiImage from "@/assets/images/memoji-computer.png";
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
+import grainImage from "@/assets/images/grain.jpg";
+import StarIcon from "@/assets/icons/star.svg";
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60">
+    // reset z index
+    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+      {/* Add grainy texture to the background */}
+      <div
+        className="absolute inset-0 -z-30 opacity-5"
+        style={{
+          backgroundImage: `url(${grainImage.src})`,
+        }}
+      ></div>
+      {/* Add rings spaced within 200px away from each other */}
+      <div className="hero-ring size-[620px]"></div>
+      <div className="hero-ring size-[820px]"></div>
+      <div className="hero-ring size-[1020px]"></div>
+      <div className="hero-ring size-[1220px]"></div>
+
       <div className="container">
         <div className="flex flex-col items-center">
           <Image
