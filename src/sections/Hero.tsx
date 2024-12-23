@@ -9,51 +9,53 @@ export const HeroSection = () => {
   return (
     // reset z index
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
-      {/* Add grainy texture to the background */}
-      <div
-        className="absolute inset-0 -z-30 opacity-5"
-        style={{
-          backgroundImage: `url(${grainImage.src})`,
-        }}
-      ></div>
-      {/* Add rings spaced within 200px away from each other */}
-      <div className="hero-ring size-[620px]"></div>
-      <div className="hero-ring size-[820px]"></div>
-      <div className="hero-ring size-[1020px]"></div>
-      <div className="hero-ring size-[1220px]"></div>
-      {/* stars */}
-      <HeroOrbit rotation={-72} size={800}>
-        <StarIcon className="size-28 text-sky-300" />
-      </HeroOrbit>
-      <HeroOrbit size={550} rotation={20}>
-        <StarIcon className="size-12 text-sky-300" />
-      </HeroOrbit>
-      <HeroOrbit size={560} rotation={98}>
-        <StarIcon className="size-8 text-sky-300" />
-      </HeroOrbit>
-      {/* sparkles */}
-      <HeroOrbit size={430} rotation={-14}>
-        <SparkleIcon className="size-8 text-sky-300/20" />
-      </HeroOrbit>
-      <HeroOrbit size={440} rotation={79}>
-        <SparkleIcon className="size-5 text-sky-300/20" />
-      </HeroOrbit>
-      <HeroOrbit size={530} rotation={178}>
-        <SparkleIcon className="size-10 text-sky-300/20" />
-      </HeroOrbit>
-      <HeroOrbit size={710} rotation={144}>
-        <SparkleIcon className="size-14 text-sky-300/20" />
-      </HeroOrbit>
-      {/* circles */}
-      <HeroOrbit size={720} rotation={86}>
-        <div className="size-3 bg-sky-300/20 rounded-full"></div>
-      </HeroOrbit>
-      <HeroOrbit size={520} rotation={-41}>
-        <div className="size-2 bg-sky-300/20 rounded-full"></div>
-      </HeroOrbit>
-      <HeroOrbit size={650} rotation={-5}>
-        <div className="size-2 bg-sky-300/20 rounded-full"></div>
-      </HeroOrbit>
+      <div className="absolute inset-0">
+        {/* Add grainy texture to the background */}
+        <div
+          className="absolute inset-0 -z-30 opacity-5"
+          style={{
+            backgroundImage: `url(${grainImage.src})`,
+          }}
+        ></div>
+        {/* Add rings spaced within 200px away from each other */}
+        <div className="hero-ring size-[620px]"></div>
+        <div className="hero-ring size-[820px]"></div>
+        <div className="hero-ring size-[1020px]"></div>
+        <div className="hero-ring size-[1220px]"></div>
+        {/* stars */}
+        <HeroOrbit rotation={-72} size={800}>
+          <StarIcon className="size-28 text-sky-300" />
+        </HeroOrbit>
+        <HeroOrbit size={550} rotation={20}>
+          <StarIcon className="size-12 text-sky-300" />
+        </HeroOrbit>
+        <HeroOrbit size={560} rotation={98}>
+          <StarIcon className="size-8 text-sky-300" />
+        </HeroOrbit>
+        {/* sparkles */}
+        <HeroOrbit size={430} rotation={-14}>
+          <SparkleIcon className="size-8 text-sky-300/20" />
+        </HeroOrbit>
+        <HeroOrbit size={440} rotation={79}>
+          <SparkleIcon className="size-5 text-sky-300/20" />
+        </HeroOrbit>
+        <HeroOrbit size={530} rotation={178}>
+          <SparkleIcon className="size-10 text-sky-300/20" />
+        </HeroOrbit>
+        <HeroOrbit size={710} rotation={144}>
+          <SparkleIcon className="size-14 text-sky-300/20" />
+        </HeroOrbit>
+        {/* circles */}
+        <HeroOrbit size={720} rotation={86}>
+          <div className="size-3 bg-sky-300/20 rounded-full"></div>
+        </HeroOrbit>
+        <HeroOrbit size={520} rotation={-41}>
+          <div className="size-2 bg-sky-300/20 rounded-full"></div>
+        </HeroOrbit>
+        <HeroOrbit size={650} rotation={-5}>
+          <div className="size-2 bg-sky-300/20 rounded-full"></div>
+        </HeroOrbit>
+      </div>
       <div className="container">
         <div className="flex flex-col items-center">
           <Image
