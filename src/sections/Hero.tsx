@@ -9,7 +9,7 @@ export const HeroSection = () => {
   return (
     // reset z index
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         {/* Add grainy texture to the background */}
         <div
           className="absolute inset-0 -z-30 opacity-5"
