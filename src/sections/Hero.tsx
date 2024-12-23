@@ -19,7 +19,13 @@ export const HeroSection = () => {
       <div className="hero-ring size-[820px]"></div>
       <div className="hero-ring size-[1020px]"></div>
       <div className="hero-ring size-[1220px]"></div>
-
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="border border-red-500 size-[800px]">
+          <div className="border border-red-500 inline-flex">
+            <StarIcon className="size-28 text-sky-300" />
+          </div>
+        </div>
+      </div>
       <div className="container">
         <div className="flex flex-col items-center">
           <Image
