@@ -10,6 +10,8 @@ import ReactIcon from "@/assets/icons/react.svg";
 import TypescriptIcon from "@/assets/icons/typescript.svg";
 import ArcIcon from "@/assets/icons/arc-browser.svg";
 import GithubIcon from "@/assets/icons/github.svg";
+import mapImage from "@/assets/images/map.png";
+import smileMemoji from "@/assets/images/memoji-smile.png";
 import { TechIcon } from "@/components/tech-icon";
 const toolboxItems = [
   {
@@ -76,6 +78,17 @@ export const AboutSection = () => {
               </div>
             ))}
           </div>
+        </Card>
+        <Card>
+          <div>
+            <StarIcon />
+            <h3>Beyond the Code</h3>
+            <p>Explore my interests and hobbies beyond the digital realm.</p>
+          </div>
+        </Card>
+        <Card>
+          <Image src={mapImage} alt="map" />
+          <Image src={smileMemoji} alt="smiling memoji" />
         </Card>
       </div>
     </div>
