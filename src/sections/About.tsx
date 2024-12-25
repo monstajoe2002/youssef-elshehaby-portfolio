@@ -50,18 +50,33 @@ const hobbies = [
   {
     title: "Fitness",
     emoji: "🏋️‍♂️",
+    left: "5%",
+    top: "5%",
   },
   {
     title: "Music",
     emoji: "🎵",
+    left: "60%",
+    top: "30%",
   },
   {
     title: "Gaming",
     emoji: "🎮",
+
+    left: "50%",
+    top: "5%",
   },
   {
     title: "Reading",
     emoji: "📚",
+    left: "5%",
+    top: "70%",
+  },
+  {
+    title: "Vintage Tech",
+    emoji: "📼",
+    left: "10%",
+    top: "45%",
   },
 ];
 
@@ -98,18 +113,26 @@ export const AboutSection = () => {
               itemsWrapperClassName="-translate-x-1/2"
             />
           </Card>
-          <Card>
-            <div>
-              <CardHeader
-                title="Beyond the Code"
-                description="Explore my interests and hobbies beyond the digital realm."
-              />
-            </div>
-            <div>
+          <Card className="h-[320px] p-0 flex flex-col">
+            <CardHeader
+              title="Beyond the Code"
+              description="Explore my interests and hobbies beyond the digital realm."
+              className="px-6 py-6"
+            />
+            <div className="relative flex-1">
               {hobbies.map((hobby) => (
-                <div key={hobby.title}>
+                <div
+                  key={hobby.title}
+                  className="inline-flex gap-2 px-6 bg-gradient-to-r from-sky-200 to-blue-400 py-1.5 rounded-full absolute"
+                  style={{
+                    left: hobby.left,
+                    top: hobby.top,
+                  }}
+                >
+                  <span className="font-medium text-gray-950">
+                    {hobby.title}
+                  </span>
                   <span>{hobby.emoji}</span>
-                  <span>{hobby.title}</span>
                 </div>
               ))}
             </div>
