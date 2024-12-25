@@ -12,8 +12,9 @@ import ArcIcon from "@/assets/icons/arc-browser.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
-import { TechIcon } from "@/components/tech-icon";
+
 import { CardHeader } from "@/components/card-header";
+import { ToolboxItems } from "@/components/toolbox-items";
 const toolboxItems = [
   {
     title: "JavaScript",
@@ -83,23 +84,15 @@ export const AboutSection = () => {
               <Image src={bookImage} alt="Book cover" />
             </div>
           </Card>
-          <Card>
+          <Card className="h-[320px] p-0">
             <CardHeader
               title="My Toolbox"
               description="Explore the technologies and tools I use to craft exceptional
                 digital experiences."
+              className="px-6 pt-6"
             />
-            <div>
-              {toolboxItems.map((item) => (
-                <div
-                  key={item.title}
-                  className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 outline-white/10 rounded-lg"
-                >
-                  <TechIcon component={item.iconType} />
-                  <span className="font-semibold">{item.title}</span>
-                </div>
-              ))}
-            </div>
+            <ToolboxItems items={toolboxItems} className="mt-6" />
+            <ToolboxItems items={toolboxItems} className="mt-6" />
           </Card>
           <Card>
             <div>
