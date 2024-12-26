@@ -1,49 +1,40 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import amrLandingPage from "@/assets/images/amr-elshehaby-landing-page.png";
+import nextVideoLandingPage from "@/assets/images/nextvideo.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import grainImage from "@/assets/images/grain.jpg";
 import { SectionHeader } from "@/components/section-header";
 import { Card } from "@/components/card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Side Project",
+    year: "2024",
+    title: "My Dad's website",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Written in Astro" },
+      { title: "Created a page about his work and career" },
+      { title: "Developed a new landing page for his Clinic, Gamma Knife" },
+      { title: "SEO-optimized for search engines" },
+      { title: "Responsive design" },
+      { title: "Mobile-friendly" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://www.amrelshehaby.com/",
+    image: amrLandingPage,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Side Project",
+    year: "2024",
+    title: "NextVideo",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "YouTube Clone written in Next.js" },
+      { title: "Implemented a user-friendly interface" },
+      { title: "Used Convex for the entire backend" },
+      { title: "Enabled user authentication with Clerk" },
+      { title: "Deployed on Vercel" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://nextvideo-zeta.vercel.app/",
+    image: nextVideoLandingPage,
   },
 ];
 
@@ -99,7 +90,7 @@ export const ProjectsSection = () => {
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-t-2xl"
                   />
                 </div>
               </div>
