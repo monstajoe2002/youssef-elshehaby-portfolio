@@ -12,10 +12,10 @@ export const HeroOrbit = ({
 }: PropsWithChildren<{
   size: number;
   rotation: number;
-  shouldSpin: boolean;
+  shouldSpin?: boolean;
+  shouldOrbit?: boolean;
   orbitDuration?: string;
   spinDuration?: string;
-  shouldOrbit?: boolean;
 }>) => {
   return (
     <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-20">
