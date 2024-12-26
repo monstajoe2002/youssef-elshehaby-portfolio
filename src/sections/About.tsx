@@ -1,6 +1,5 @@
 import { Card } from "@/components/card";
 import { SectionHeader } from "@/components/section-header";
-import StarIcon from "@/assets/icons/star.svg";
 import bookImage from "@/assets/images/book-cover.png";
 import Image from "next/image";
 import JavascriptIcon from "@/assets/icons/square-js.svg";
@@ -106,11 +105,14 @@ export const AboutSection = () => {
                 description="Explore the technologies and tools I use to craft exceptional
                 digital experiences."
               />
-              <ToolboxItems items={toolboxItems} />
+              <ToolboxItems
+                items={toolboxItems}
+                itemsWrapperClassName="animate-move-left [animation-duration:30s]"
+              />
               <ToolboxItems
                 items={toolboxItems}
                 className="mt-6"
-                itemsWrapperClassName="-translate-x-1/2"
+                itemsWrapperClassName="-translate-x-1/2 animate-move-right [animation-duration:15s]"
               />
             </Card>
           </div>
