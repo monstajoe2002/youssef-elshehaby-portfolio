@@ -12,12 +12,10 @@ const portfolioProjects = [
     year: "2024",
     title: "My Dad's website",
     results: [
-      { title: "Written in Astro" },
       { title: "Created a page about his work and career" },
       { title: "Developed a new landing page for his Clinic, Gamma Knife" },
       { title: "SEO-optimized for search engines" },
       { title: "Responsive design" },
-      { title: "Mobile-friendly" },
     ],
     link: "https://www.amrelshehaby.com/",
     image: amrLandingPage,
