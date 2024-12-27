@@ -2,19 +2,15 @@ import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 const footerLinks = [
   {
     title: "YouTube",
-    href: "#",
+    href: "https://www.youtube.com/@monstajoedev",
   },
   {
     title: "Twitter",
-    href: "#",
-  },
-  {
-    title: "Instagram",
-    href: "#",
+    href: "https://x.com/monstajoedev",
   },
   {
     title: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/in/youssef-el-shehaby-2ba3a1245/",
   },
 ];
 
