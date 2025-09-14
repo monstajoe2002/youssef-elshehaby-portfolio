@@ -24,7 +24,7 @@ export const ContactSection = () => {
             </div>
             <div>
               <Link
-                href="https://www.fiverr.com/s/wk9lbyq"
+                href="https://www.upwork.com/freelancers/~016410aab702943fb9?mp_source=share"
                 target="_blank"
                 className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900"
               >

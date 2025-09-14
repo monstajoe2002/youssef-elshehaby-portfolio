@@ -1,15 +1,18 @@
 "use client";
 import { Card } from "@/components/card";
 import { SectionHeader } from "@/components/section-header";
-import bookImage from "@/assets/images/book-cover.png";
 import Image from "next/image";
 import JavascriptIcon from "@/assets/icons/square-js.svg";
 import HtmlIcon from "@/assets/icons/html5.svg";
 import CssIcon from "@/assets/icons/css3.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import TypescriptIcon from "@/assets/icons/typescript.svg";
-import ArcIcon from "@/assets/icons/arc-browser.svg";
 import GithubIcon from "@/assets/icons/github.svg";
+import BraveIcon from "@/assets/icons/brave-icon.svg";
+import NextjsIcon from "@/assets/icons/nextjs-icon.svg";
+import TailwindIcon from "@/assets/icons/tailwind-icon.svg";
+import VueIcon from "@/assets/icons/vue-icon.svg";
+import SassIcon from "@/assets/icons/sass-icon.svg";
 import mapImage from "@/assets/images/map.jpg";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/card-header";
@@ -38,12 +41,28 @@ const toolboxItems = [
     iconType: TypescriptIcon,
   },
   {
-    title: "Arc",
-    iconType: ArcIcon,
+    title: "Brave",
+    iconType: BraveIcon,
   },
   {
     title: "GitHub",
     iconType: GithubIcon,
+  },
+  {
+    title: "Next.js",
+    iconType: NextjsIcon,
+  },
+  {
+    title: "Tailwind CSS",
+    iconType: TailwindIcon,
+  },
+  {
+    title: "SASS",
+    iconType: SassIcon,
+  },
+  {
+    title: "Vue.js",
+    iconType: VueIcon,
   },
 ];
 

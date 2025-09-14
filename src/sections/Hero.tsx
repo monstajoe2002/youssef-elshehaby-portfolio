@@ -144,7 +144,7 @@ export const HeroSection = () => {
             <ArrowDown className="size-4" />
           </Link>
           <Link
-            href="https://www.fiverr.com/s/wk9lbyq"
+            href="https://www.upwork.com/freelancers/~016410aab702943fb9?mp_source=share"
             target="_blank"
             className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
           >
