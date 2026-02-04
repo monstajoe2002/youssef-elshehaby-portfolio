@@ -1,5 +1,6 @@
 import amrLandingPage from "@/assets/images/amr-elshehaby-landing-page.png";
 import nextVideoLandingPage from "@/assets/images/nextvideo.png";
+import caramellaCornerLandingPage from "@/assets/images/caramella-corner.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -7,6 +8,27 @@ import { SectionHeader } from "@/components/section-header";
 import { Card } from "@/components/card";
 
 const portfolioProjects = [
+  {
+    company: "Caramella Corner",
+    year: "2025",
+    title: "Caramella Corner",
+    results: [
+      { title: "Full e-commerce site with products, categories, and cart" },
+      {
+        title: "Admin dashboard for managing products, categories, and orders",
+      },
+      { title: "Theme toggle and user authentication" },
+      { title: "Cash on delivery (online payment coming soon)" },
+      { title: "Responsive, mobile-friendly design" },
+      {
+        title:
+          "Written in Tanstack Start (React), Neon, Drizzle, Tailwind and TypeScript",
+      },
+      { title: "Deployed on Vercel" },
+    ],
+    link: "https://www.caramellacorner.com/",
+    image: caramellaCornerLandingPage,
+  },
   {
     company: "Side Project",
     year: "2024",
@@ -72,7 +94,7 @@ export const ProjectsSection = () => {
                         className="flex gap-2 text-sm text-white/50 md:text-base"
                         key={result.title}
                       >
-                        <CheckCircleIcon className="size-5 md:size-6" />
+                        <CheckCircleIcon className="size-5 shrink-0 md:size-6" />
                         <span>{result.title}</span>
                       </li>
                     ))}
